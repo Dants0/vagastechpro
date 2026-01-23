@@ -11,7 +11,7 @@ export default function Navbar() {
           <Link href="/" className="hover:text-blue-600 transition-colors">Vagas</Link>
           <Link href="/sites" className="hover:text-blue-600 transition-colors">Fontes</Link>
           <Link href="/sobre" className="hover:text-blue-600 transition-colors">Sobre</Link>
-          <Link href="https://github.com/dants0/vagastechpro" className="hover:text--600 transition-colors">Sobre</Link>
+          <Link href="https://github.com/dants0/vagastechpro" className="hover:text-blue-600 transition-colors">Repositório</Link>
         </div>
       </div>
     </nav>
