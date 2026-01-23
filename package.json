@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx --watch index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bot": "tsx index.ts",
+    "web": "cd web && npm start",
+    "start:prod": "npx prisma migrate deploy && concurrently \"npm run bot\" \"npm run web\""
   },
   "keywords": [],
   "author": "",
@@ -14,6 +17,7 @@
   "dependencies": {
     "@prisma/client": "^6.19.2",
     "axios": "^1.13.2",
+    "concurrently": "^9.2.1",
     "date-fns": "^4.1.0",
     "dotenv": "^17.2.3",
     "fastify": "^5.7.0",
