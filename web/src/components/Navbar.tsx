@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import ThemeToggle from './ThemeToggle'; // <--- Importe o Toggle
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,15 +26,10 @@ export default function Navbar() {
             <Link href="/sobre" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Sobre</Link>
             <Link href="https://github.com/dants0/vagastechpro" target="_blank" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Repositório</Link>
           </div>
-          {/* Botão de Tema no Desktop */}
-          <div className="border-l border-slate-200 pl-4 dark:border-slate-800">
-            <ThemeToggle />
-          </div>
         </div>
 
         {/* Botão Mobile + Toggle Mobile */}
         <div className="flex items-center gap-2 md:hidden">
-          <ThemeToggle />
           <button 
             onClick={toggleMenu}
             className="rounded-lg p-2 text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800 focus:outline-none"
