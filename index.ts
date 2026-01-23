@@ -39,9 +39,9 @@ cron.schedule('0 9,15,21 * * *', async () => {
   await hardScraper.run();
 });
 
-// 3. Worker (Postador): A cada 5 minutos
+// 3. Worker (Postador): A cada 1 hora
 // Ele verifica se tem vaga na fila e posta 1. Isso evita "flood" no canal.
-cron.schedule('*/5 * * * *', async () => {
+cron.schedule('0 * * * *', async () => {
   await worker.process();
 });
 
@@ -102,18 +102,6 @@ const start = async () => {
   bot.launch(() => {
     console.log('✅ Bot conectado ao Telegram!');
   });
-
-  // 1. Roda o Scraper (Busca vagas)
-  try {
-    await scraper.run();
-  } catch (e) { console.error('Erro no Scraper:', e); }
-
-  try {
-    await hardScraper.run();
-  } catch (e) { console.error('Erro no HardScraper:', e); }
-
-  // 2. Roda o Worker (Posta no canal)
-  await worker.process();
 };
 
 start();
