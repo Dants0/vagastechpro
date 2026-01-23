@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
  
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://auditor.codivatech.com';
+  const baseUrl = 'https://vagastechpro.codivatech.com';
 
   return [
     {

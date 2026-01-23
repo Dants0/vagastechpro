@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',     // Permite ler tudo
       disallow: ['/api/', '/admin/'], // Bloqueia pastas privadas (opcional)
     },
-    sitemap: 'https://auditor.codivatech.com/sitemap.xml', // Aponta para o sitemap
+    sitemap: 'https://vagastechpro.codivatech.com/sitemap.xml', // Aponta para o sitemap
   }
 }
