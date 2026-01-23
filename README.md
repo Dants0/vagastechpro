@@ -61,3 +61,4 @@ O projeto foi construído utilizando as melhores práticas do mercado:
 ```bash
 git clone [https://github.com/dants0/vagastechpro.git](https://github.com/dants0/vagastechpro.git)
 cd vagastechpro# vagastechpro
+```
