@@ -7,6 +7,7 @@ import { getSystemStats } from './actions';
 import Footer from '@/src/components/Footer';
 
 export const revalidate = 30;
+export const dynamic = 'force-dynamic';
 
 export default async function Home() {
   const stats = await getSystemStats();
