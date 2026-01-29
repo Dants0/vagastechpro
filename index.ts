@@ -27,11 +27,11 @@ const worker = new QueueWorker(bot, TARGET_CHANNEL_ID);
 
 // --- AGENDAMENTOS ---
 
-// // 1. Scraper Padrão (Leve): A cada 4 horas (ex: 8h, 12h, 16h...)
-// cron.schedule('0 */4 * * *', async () => {
-//   console.log('⏰ Cron: Rodando Scraper Padrão...');
-//   await scraper.run();
-// });
+// 1. Scraper Padrão (Leve): A cada 4 horas (ex: 8h, 12h, 16h...)
+cron.schedule('0 */4 * * *', async () => {
+  console.log('⏰ Cron: Rodando Scraper Padrão...');
+  await scraper.run();
+});
 
 // // 2. Scraper Pesado (Hard): Apenas 3x ao dia (Manhã, Tarde, Noite)
 // cron.schedule('0 9,15,21 * * *', async () => {
