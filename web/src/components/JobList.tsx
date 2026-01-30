@@ -48,7 +48,7 @@ export default function JobList({ initialJobs, availableOrigins }: JobListProps)
           <div className="flex-1 relative">
             <span className="absolute left-3 top-2.5 text-slate-400">🔍</span>
             <input
-              className="w-full rounded-lg border border-slate-200 bg-slate-50 pl-10 pr-4 py-2 text-sm focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all"
+              className="w-full text-black rounded-lg border border-slate-200 bg-slate-50 pl-10 pr-4 py-2 text-sm focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all"
               placeholder="Buscar por cargo, tecnologia..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
@@ -56,7 +56,7 @@ export default function JobList({ initialJobs, availableOrigins }: JobListProps)
           </div>
 
           <select
-            className="rounded-lg border border-slate-200 bg-slate-50 px-4 py-2 text-sm focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all"
+            className="rounded-lg text-black border border-slate-200 bg-slate-50 px-4 py-2 text-sm focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all"
             value={origin}
             onChange={(e) => setOrigin(e.target.value)}
           >

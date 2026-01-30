@@ -34,10 +34,10 @@ cron.schedule('0 */4 * * *', async () => {
 });
 
 // // 2. Scraper Pesado (Hard): Apenas 3x ao dia (Manhã, Tarde, Noite)
-// cron.schedule('0 9,15,21 * * *', async () => {
-//   console.log('⏰ Cron: Rodando Hard Scraper...');
-//   await hardScraper.run();
-// });
+cron.schedule('0 6,12,21 * * *', async () => {
+  console.log('⏰ Cron: Rodando Hard Scraper...');
+  await hardScraper.run();
+});
 
 // 3. Worker (Postador): A cada 1 hora
 // Ele verifica se tem vaga na fila e posta 1. Isso evita "flood" no canal.
