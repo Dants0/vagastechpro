@@ -39,9 +39,9 @@ cron.schedule('0 6,12,21 * * *', async () => {
   await hardScraper.run();
 });
 
-// 3. Worker (Postador): A cada 1 hora
+// 3. Worker (Postador): A cada 10 minutos
 // Ele verifica se tem vaga na fila e posta 1. Isso evita "flood" no canal.
-cron.schedule('0 * * * *', async () => {
+cron.schedule('*/10 * * * *', async () => {
   await worker.process();
 });
 
