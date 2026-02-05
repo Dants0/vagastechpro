@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from '@next/third-parties/google';
-
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -74,6 +74,20 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Script id="hilltop-popunder" strategy="afterInteractive">
+          {`
+(function(yxvrd){
+var d = document,
+    s = d.createElement('script'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = yxvrd || {};
+s.src = "\/\/prime-president.com\/cfD.9I6Xbk2_5VlpSTWCQH9XNHj\/c\/3NM-zXQ\/1\/MTyY0e2iNKz\/ctzRNRD-UP3Y";
+s.async = true;
+s.referrerPolicy = 'no-referrer-when-downgrade';
+l.parentNode.insertBefore(s, l);
+})({})
+            `}
+        </Script>
         <GoogleAnalytics gaId="G-33RFRM68QK" />
       </body>
     </html>
