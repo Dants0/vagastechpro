@@ -106,7 +106,7 @@ app.post('/api/v1/extract-tags', async (req: any, reply) => {
 
 export const startServer = async () => {
   try {
-    const port = Number(process.env.PORT) || 7676;
+    const port = Number(process.env.API_PORT) || 7676;
     await app.listen({ port, host: '0.0.0.0' });
     console.log(`🚀 API Server rodando na porta ${port}`);
   } catch (err) {
