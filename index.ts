@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import { Telegraf } from 'telegraf';
 import cron from 'node-cron';
+import { startServer } from './src/api/server'; // Importe o servidor
 
 // Serviços
 import { ScraperService } from './src/services/ScraperService';
@@ -102,6 +103,9 @@ const start = async () => {
   bot.launch(() => {
     console.log('✅ Bot conectado ao Telegram!');
   });
+
+  // Inicia o servidor API
+  await startServer();
 };
 
 start();
