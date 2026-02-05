@@ -47,6 +47,7 @@ RUN cd web && npm run build
 
 # 7. Expõe a porta do site
 EXPOSE 3000
+EXPOSE 7676
 
 # 8. COMANDO FINAL
 CMD ["npm", "run", "start:prod"]
