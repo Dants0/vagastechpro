@@ -24,7 +24,8 @@ export default function Navbar() {
             <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Vagas</Link>
             <Link href="/sites" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Fontes</Link>
             <Link href="/sobre" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Sobre</Link>
-            <Link href="https://github.com/dants0/vagastechpro" target="_blank" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Repositório</Link>
+            <Link href="/donate" className="hover:text-red-600 dark:hover:text-blue-400 transition-colors">Donate</Link>
+            <Link href="https://github.com/dants0" target="_blank" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Repositório</Link>
           </div>
         </div>
 
@@ -60,7 +61,10 @@ export default function Navbar() {
             <Link href="/sobre" onClick={() => setIsOpen(false)} className="hover:text-blue-600 dark:hover:text-blue-400 py-2 border-b border-slate-50 dark:border-slate-900">
               ℹ️ Sobre
             </Link>
-            <Link href="https://github.com/dants0/vagastechpro" target="_blank" onClick={() => setIsOpen(false)} className="hover:text-blue-600 dark:hover:text-blue-400 py-2">
+            <Link href="/donate" onClick={() => setIsOpen(false)} className="hover:text-red-600 dark:hover:text-blue-400 py-2 border-b border-slate-50 dark:border-slate-900">
+              💖 Donate
+            </Link>
+            <Link href="https://github.com/dants0" target="_blank" onClick={() => setIsOpen(false)} className="hover:text-blue-600 dark:hover:text-blue-400 py-2">
               💻 Repositório
             </Link>
           </div>
