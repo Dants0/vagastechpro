@@ -35,6 +35,9 @@ export const metadata: Metadata = {
   authors: [{ name: "CodivaTech", url: "https://codivatech.com" }],
   creator: "CodivaTech",
   publisher: "CodivaTech",
+  verification: {
+    google: "bL3OfmZEaL_QylfAp2WnCohghZpHoy4k4ekHJ8TFJe0"
+  },
   robots: {
     index: true,
     follow: true,
